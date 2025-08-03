@@ -1,4 +1,15 @@
 {{ 'navbar.css' | asset_url | stylesheet_tag }}
+
+{% assign  settings = section.settings %}
+{% style %}
+    --nav_padding_top: {{ settings.pad_top }};
+    --nav_padding_bottom: {{ settings.pad_bot }};
+    --nav_padding_left: {{ settings.pad_left }};
+    --nav_padding_right: {{ settings.pad_right }};
+    --nav_background: {{ settings.background }};
+{% endstyle %}
+
+
 <nav class="nav">OUR NAV</nav>
 
 {% schema %}
