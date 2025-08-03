@@ -1,15 +1,14 @@
 {{ 'navbar.css' | asset_url | stylesheet_tag }}
-
-{% assign  settings = section.settings %}
+{% assign settings = section.settings %}
 {% style %}
-    --nav_padding_top: {{ settings.pad_top }};
-    --nav_padding_bottom: {{ settings.pad_bot }};
-    --nav_padding_left: {{ settings.pad_left }};
-    --nav_padding_right: {{ settings.pad_right }};
-    --nav_background: {{ settings.background }};
+  --nav_padding_top: {{ settings.pad_top }};
+  --nav_padding_bottom: {{ settings.pad_bot }};
+  --nav_padding_left: {{ settings.pad_left }};
+  --nav_padding_right: {{ settings.pad_right }};
+  --nav_background: {{ settings.background }};
 {% endstyle %}
 
-
+{{ settings.pad_bot }}
 <nav class="nav">OUR NAV</nav>
 
 {% schema %}
@@ -20,7 +19,8 @@
     { "id": "pad_bot", "type": "range", "label": "Padding bottom", "default": 5, "max": 30, "min": 0 },
     { "id": "pad_left", "type": "range", "label": "Padding left", "default": 5, "max": 30, "min": 0 },
     { "id": "pad_right", "type": "range", "label": "Padding right", "default": 5, "max": 30, "min": 0 },
-    { "id": "background", "type": "color", "label": "Background", "default": "#6b5b95" }
+    { "id": "background", "type": "color", "label": "Background", "default": "#6b5b95" },
+    { "id": "background_s", "type": "color", "label": "Background second", "default": "#6b5b35" }
   ],
   "presets": [
     {
