@@ -13,8 +13,8 @@
       "header-group": {
         "type": "header-group",
         "settings": {
-          "pad_top": 15,
-          "pad_bot": 14,
+          "pad_top": 12,
+          "pad_bot": 20,
           "pad_left": 15,
           "pad_right": 17,
           "background": "#a0ce32"
