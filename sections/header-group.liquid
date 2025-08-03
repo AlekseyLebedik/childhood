@@ -1,0 +1,21 @@
+{{ 'navbar.css' | asset_url | stylesheet_tag }}
+<nav class="nav">OUR NAV</nav>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    { "id": "pad_top", "type": "range", "label": "Padding top", "default": 5, "max": 30, "min": 0 },
+    { "id": "pad_bot", "type": "range", "label": "Padding bottom", "default": 5, "max": 30, "min": 0 },
+    { "id": "pad_left", "type": "range", "label": "Padding left", "default": 5, "max": 30, "min": 0 },
+    { "id": "pad_right", "type": "range", "label": "Padding right", "default": 5, "max": 30, "min": 0 },
+    { "id": "background", "type": "color", "label": "Background", "default": "#6b5b95" }
+  ],
+  "presets": [
+    {
+      "name": "Header",
+      "category": "Navigation"
+    }
+  ]
+}
+{% endschema %}

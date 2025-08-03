@@ -1,1 +1,10 @@
 <h1>This is the Adidas template</h1>
+
+
+{% paginate collection.products by 2 %}
+  {% for product in collection.products %}
+        <div>{{ product.title }}</div>
+  {% endfor %}
+  {%  render "pagination" %}
+{% endpaginate %}
+

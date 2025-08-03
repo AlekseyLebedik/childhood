@@ -1,0 +1,5 @@
+.nav {
+    padding: var(--nav_padding_top) var(--nav_padding_right) var(--nav_padding_bottom) var(--nav_padding_left);
+    background-color: var(--nav_background);
+    font-size: clamp(14px, 2vw, 30px);
+}

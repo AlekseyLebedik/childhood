@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>{{ page_title }}</title>
     {{ content_for_header }}
+    {{ "base.css" | asset_url | stylesheet_tag }}
   </head>
   <body>
+    {%  section "header-group" %}
     {{ content_for_layout }}
   </body>
 </html>
